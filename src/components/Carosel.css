@@ -1,8 +1,17 @@
+body {
+  background-color: ;
+}
+
 .slick-slide.slick-center img {
   transform: scale(1.1);
 }
 
+img {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 a {
-  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.5rem;
 }

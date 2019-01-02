@@ -1,5 +1,4 @@
 import React from 'react';
-import curry from './images/curry.png';
 
 const Header = () => {
   return (
@@ -10,10 +9,9 @@ const Header = () => {
         <a className="item">Contact</a>
       </div>
       <div className="item">
-        <i
-          href="https://www.instagram.com/paigebachman_/"
-          className="inverted fitted big purple instagram link icon"
-        />
+        <a href="https://www.instagram.com/paigebachman_/">
+          <i className="inverted fitted large purple instagram link icon" />
+        </a>
       </div>
     </div>
   );
