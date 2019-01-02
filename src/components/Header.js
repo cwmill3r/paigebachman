@@ -1,16 +1,23 @@
+import './Header.css';
 import React from 'react';
 
 const Header = () => {
   return (
     <div className="ui menu">
-      <a className="item">PaigeBachman</a>
-      <a className="ui pointing dropdown link item">Projects</a>
+      <a id="text" className="item">
+        PaigeBachman
+      </a>
+      <a id="text" className="ui pointing dropdown link item">
+        Projects
+      </a>
       <div className="right menu">
-        <a className="item">Contact</a>
+        <a id="text" className="item">
+          Contact
+        </a>
       </div>
       <div className="item">
         <a href="https://www.instagram.com/paigebachman_/">
-          <i className="inverted fitted large purple instagram link icon" />
+          <i id="icon" className="inverted fitted large instagram link icon" />
         </a>
       </div>
     </div>

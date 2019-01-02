@@ -4,7 +4,7 @@ import Carosel from './Carosel';
 
 const App = () => {
   return (
-    <div className="ui container">
+    <div id="appbody" className="ui container">
       <Header />
       <Carosel />
     </div>
