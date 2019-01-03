@@ -9,7 +9,9 @@ import p4 from '../images/p4.png';
 class Carosel extends React.Component {
   render() {
     const settings = {
-      dots: false,
+      adaptiveHeight: true,
+      dots: true,
+      arrows: false,
       infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
