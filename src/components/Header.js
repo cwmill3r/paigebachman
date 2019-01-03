@@ -1,19 +1,24 @@
 import './Header.css';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
     <div className="ui menu">
-      <a id="text" className="item">
+      <Link to={'/'} id="text" className="item">
         PaigeBachman
-      </a>
-      <a id="text" className="ui pointing dropdown link item">
+      </Link>
+      <Link
+        to={'/projects'}
+        id="text"
+        className="ui pointing dropdown link item"
+      >
         Projects
-      </a>
+      </Link>
       <div className="right menu">
-        <a id="text" className="item">
+        <Link to={'/contacts'} id="text" className="item">
           Contact
-        </a>
+        </Link>
       </div>
       <div className="item">
         <a href="https://www.instagram.com/paigebachman_/">
@@ -28,3 +33,7 @@ export default Header;
 
 // <img src={curry} alt="Curry" className="ui circular image" />;
 // <i class="instagram icon" />;
+
+// <Link to={`/streams/edit/${stream.id}`} className="ui button primary">
+//   Edit
+// </Link>
