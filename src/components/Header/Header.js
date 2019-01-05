@@ -19,6 +19,9 @@ const Header = () => {
         <Link to={'/contacts'} id="text" className="item">
           Contact
         </Link>
+        <Link to={'/login'} id="text" className="item">
+          Login
+        </Link>
       </div>
       <div className="item">
         <a href="https://www.instagram.com/paigebachman_/">
