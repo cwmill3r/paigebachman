@@ -33,10 +33,3 @@ const Header = () => {
 };
 
 export default Header;
-
-// <img src={curry} alt="Curry" className="ui circular image" />;
-// <i class="instagram icon" />;
-
-// <Link to={`/streams/edit/${stream.id}`} className="ui button primary">
-//   Edit
-// </Link>
