@@ -1,6 +1,7 @@
+import './GoogleAuth.css';
 import React from 'react';
 import { connect } from 'react-redux';
-import { signIn, signOut } from '../actions';
+import { signIn, signOut } from '../../actions';
 
 class GoogleAuth extends React.Component {
   componentDidMount() {
@@ -42,23 +43,31 @@ class GoogleAuth extends React.Component {
       return null; // could add spinner later -remove
     } else if (this.props.isSignedIn) {
       return (
-        <button onClick={this.onSignOutClick} className="ui red google button">
-          <i className="google icon" />
+        <button
+          onClick={this.onSignOutClick}
+          className="ui inverted violet google button"
+          id="signOutButton"
+        >
+          <i className="pink google icon" />
           Sign Out
         </button>
       );
     } else {
       return (
-        <button onClick={this.onSignInClick} className="ui red google button">
-          <i className="google icon" />
-          Sign In With Google
+        <button
+          onClick={this.onSignInClick}
+          className="ui inverted violet google button"
+          id="signInButton"
+        >
+          <i className="pink google icon" />
+          Sign In
         </button>
       );
     }
   }
 
   render() {
-    return <div>{this.renderAuthButton()}</div>;
+    return <div className="authButton">{this.renderAuthButton()}</div>;
   }
 }
 

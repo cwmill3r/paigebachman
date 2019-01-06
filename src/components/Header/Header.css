@@ -1,14 +1,17 @@
 * {
-  font-size: 2vh;
+  font-size: 2vw;
+  font-family: 'Roboto', monospace;
 }
 
 .ui.menu {
-  background-color: #1b1b1b;
+  background-color: whitesmoke;
+  max-height: 5vw;
 }
 
 #text {
   color: #ba7ca2;
-  font-size: 1.5rem;
+  font-size: 2vw;
+  font-family: 'Roboto', monospace;
 }
 
 #icon {

@@ -1,6 +1,7 @@
 import './Header.css';
 import React from 'react';
 import { Link } from 'react-router-dom';
+import GoogleAuth from '../GoogleAuth/GoogleAuth';
 
 const Header = () => {
   return (
@@ -19,14 +20,17 @@ const Header = () => {
         <Link to={'/contacts'} id="text" className="item">
           Contact
         </Link>
-        <Link to={'/login'} id="text" className="item">
-          Login
-        </Link>
-      </div>
-      <div className="item">
-        <a href="https://www.instagram.com/paigebachman_/">
-          <i id="icon" className="inverted fitted large instagram link icon" />
-        </a>
+        <div className="item">
+          <a href="https://www.instagram.com/paigebachman_/">
+            <i
+              id="icon"
+              className="inverted fitted large instagram link icon"
+            />
+          </a>
+        </div>
+        <div className="item">
+          <GoogleAuth />
+        </div>
       </div>
     </div>
   );
